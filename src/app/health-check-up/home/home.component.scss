@@ -1,0 +1,22 @@
+
+.trans { 
+
+    overflow: hidden; 
+    margin: 0 auto; 
+    border-radius: 20px;
+} 
+
+.trans img { 
+    width: 100%; 
+    transition: 0.5s all ease-in-out; 
+} 
+
+.trans:hover img { 
+    transform: scale(1.1); 
+} 
+
+.bg{
+    background-color: #B94085;
+    border-radius: 15px;
+    color: white;
+}

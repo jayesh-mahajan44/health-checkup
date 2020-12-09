@@ -1,0 +1,98 @@
+
+
+    <div class="cart1 mx-auto px-2 " style="margin-top: 80px;" id="display3" >
+        <div class="cart1a  "    style="overflow: auto; margin-top: 40px; height: calc(100vh - 150px); "  >
+   
+           <div class="abc p-3 position-sticky  " style=" height: fit-content; top: 0;" >
+      
+               <h3 class="m-0" > Total Items ({{LocalStorageData.length}})</h3>
+              
+               <div class="text-right" >
+                <button  class="btn btn-info" (click) = 'navigate()'  >  <h5 class="text-warning m-0" >+ Add More</h5>    </button>
+            
+             </div>
+             </div>
+
+             <div *ngFor = 'let data of LocalStorageData;let i=item' class="mb-5 " >
+
+          <div class="cart2 border-top py-4 bg-light">
+               <div class="text-center">
+               <img class="h-100 py-2 w-75 " src="assets\{{data.img}}" alt="Card image">
+           </div>
+   
+           
+   
+               <div class="cart4 pt-2" >
+                 <h4 class=" ">{{data.name}} </h4>
+                 <p class="gray ml-0 mb-2" style="font-size: 12px;">Thyrocare</p>
+            
+                     <p class="mb-1"> <span style=" font-size: 18px; font-weight: 600;"><i class="fa fa-inr" aria-hidden="true"></i> {{sellingPrice(data.marketPrice,data.discount)}}</span> 
+                         <span class="line mx-2" style="font-size: 14px;text-decoration-line: line-through"><i class="fa fa-inr" aria-hidden="true"></i> {{data.marketPrice}}</span> 
+                         <span class="green" style="font-size: 14px;">{{data.discount}}% off</span> 
+                     </p>
+                      
+               </div>
+              <div class="mt-2" >
+                <input type="checkbox" style="height: 15px; width: 15px;" name="Courier" > <label class="mx-2" for="Courier">Send Reports by Courier</label>
+            <p  class="gray ml-0 mb-2" style="font-size: 12px;" >Reports will be sent to Collection Address</p>
+              </div>
+               
+              <div class="cart5">
+                 <a  class="cart5a">SAVE FOR LATER</a>
+                 <button  class="cart5a ml-4 btn" style="outline: none;" (click)= 'remove(i)'>REMOVE</button>
+               </div>
+   
+           </div>
+      <div class="d-flex justify-content-between pr-4 py-3 bg-secondary text-white" style="box-shadow: 0px 0px 15px 0px #dcd6d6;">
+    <div class="mx-5">
+
+      <div class="">
+       <span style="font-size: 18px; font-weight: 600;" ><i class="fa fa-inr mr-1" aria-hidden="true"></i>{{sellingPrice(data.marketPrice,data.discount)}}</span> <span class="mx-2" style="text-decoration-line: line-through" > <i class="fa fa-inr" aria-hidden="true"></i>{{data.marketPrice}} </span> 
+      </div>
+    <div style="font-size: 18px; font-weight: 600;" class="text-capitalize text-warning"  >
+    <span  >save</span> <span class="mx-2"   > <i class="fa fa-inr" aria-hidden="true"></i> {{ discount(data.marketPrice,data.discount)}} </span> 
+    </div>
+    
+  </div>
+  <div>
+    <button class="btn btn1 btn-outline-success btn-lg text-light" style="width: 200px;" (click)='booking()' > Confirm Booking</button>
+  </div>
+   </div>
+   
+  </div>
+
+        </div>
+   
+        <div class="cart6 shadow mt-5 ml-4 bg-light" style="background-color: white;">
+         
+             <span class="gray cart6a m-0 pl-4">PRICE DETAILS</span> 
+       
+           <div class="cart6c pt-4"> 
+   
+         <div class="cart6d">     
+         <span class="pl-4"> {{LocalStorageData.length}} Test | Total</span>
+         <span class="pr-4">₹{{totalMarketPrice}}</span>
+       </div>
+   
+       <div class="cart6d" > 
+         <span  class="pl-4" > Courier Charge </span>
+         <span class="pr-4" > ₹{{CourierCharge}}</span>
+       </div>
+
+       <div class="cart6d" style="border-bottom: dashed 1px lightgrey;">     
+        <span class="pl-4"> Discount </span>
+        <span class="pr-4">₹{{totalDiscount}}</span>
+      </div>
+   
+       <div class="cart6d pt-3" style="font-size: 20px;font-weight: 500; border-bottom: solid 1px lightgrey;"> 
+         <span  class="pl-4">Total Payable</span>
+         <span class="pr-4">₹{{totalSellingPrice}}</span>
+         </div>
+   
+       </div>
+   
+         <p class="cart6b green m-0 text-center align-self-center">You will save ₹{{totalDiscount}} on this order</p>
+         
+         </div>
+   
+       </div>

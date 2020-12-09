@@ -1,0 +1,1759 @@
+<div class="container-fluid mt-5 pt-3">
+  <div class="row px-5 my-4">
+    <div class="d-flex justify-content-between w-100">
+      <div>
+        <h2>{{ data.name }}</h2>
+      </div>
+      <div class="d-flex">
+        <div>
+          <p class="m-0">Your Location</p>
+          <h5 class="text-right">Mumbai</h5>
+        </div>
+        <div class="ml-2">
+          <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row px-5 pb-5 border-bottom">
+    <div class="col-4">
+      <img
+        src="assets/{{ data.img }}"
+        class="w-100 h-100"
+        style="border-radius: 20px"
+      />
+    </div>
+
+    <div class="col-8">
+      <div class="d-flex border-bottom pb-2">
+        <div class="d-flex">
+          <div><img src="assets/{{ data.testCount }}" alt="" srcset="" /></div>
+          <div class="d-flex align-items-center">
+            <span>80+</span><span>Tests included</span>
+          </div>
+        </div>
+
+        <div class="d-flex mx-4">
+          <div><img src="assets/{{ data.smileLogo }}" alt="" srcset="" /></div>
+          <div class="d-flex align-items-center">
+            <span>400+</span><span>Booked in last 7 days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex mt-4">
+        <div style="width: 45%; margin-right: 5%">
+          <h6>This package covers</h6>
+          <ul class="pl-4">
+            <li *ngFor="let item of data.packageCover">{{ item }}</li>
+          </ul>
+        </div>
+        <div style="width: 45%; margin-left: 3%">
+          <h6>Why should you book this package?</h6>
+
+          <div
+            id="slider4"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="false"
+          >
+            <div class="carousel-inner" style="height: 100px">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3 col-lg-4">
+                    <div class="slide4_item">
+                      <div
+                        class="border border-primary"
+                        style="border-radius: 10px"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="assets/{{ data.healthStyle }}"
+                          alt="Second slide"
+                        />
+                      </div>
+                      <h4>
+                        To help evaluate lifestyle changes and health risks
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-lg-4">
+                    <div class="slide4_item">
+                      <div
+                        class="border border-primary"
+                        style="border-radius: 10px"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="assets/{{ data.bookingWindow }}"
+                          alt="Third slide"
+                        />
+                      </div>
+
+                      <h4>The tests are recommended atleast once a year</h4>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-lg-4">
+                    <div class="slide4_item">
+                      <div
+                        class="border border-primary"
+                        style="border-radius: 10px"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="assets/{{ data.immunity }}"
+                          alt="Fourth slide"
+                        />
+                      </div>
+
+                      <h4 style="font-size: 11px; margin-top: 3px">
+                        To have better insight into your immunity
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3 col-lg-4">
+                    <div class="slide4_item">
+                      <div
+                        class="border border-primary"
+                        style="border-radius: 10px"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="assets/{{ data.userLogo }}"
+                          alt="First slide"
+                        />
+                      </div>
+                      <h4>If you are above 18 years</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              class="carousel-control-prev border rounded-circle bg-danger"
+              href="#slider4"
+              role="button"
+              data-slide="prev"
+              style="height: 30px; width: 30px; top: 70%"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next border rounded-circle bg-danger"
+              href="#slider4"
+              role="button"
+              data-slide="next"
+              style="height: 30px; width: 30px; top: 70%"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border border-warning d-flex"
+        style="height: 80px; border-radius: 20px"
+      >
+        <div class="col-4 d-flex align-items-center">
+          <div><img src="assets/{{ data.DrLogo }}" alt="" srcset="" /></div>
+          <div><p class="m-0">Free consultations with top Doctors</p></div>
+        </div>
+        <div class="col-4 d-flex align-items-center">
+          <div><img src="assets/{{ data.homeLogo }}" alt="" srcset="" /></div>
+          <div><p class="m-0">Sample pickup at home</p></div>
+        </div>
+        <div class="col-4 d-flex align-items-center">
+          <div>
+            <img src="assets/{{ data.onlineReport }}" alt="" srcset="" />
+          </div>
+          <div><p class="m-0">Online reports within 48 hours</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row px-5 flex-column">
+    <div class="">
+      <div class="mt-4 mb-2">
+        <h3>Select <span class="text-info">medical</span> Lab Partner</h3>
+      </div>
+      <div class="d-flex mt-4">
+        <div
+          class="h-100 py-2 px-4 border border-info"
+          style="border-radius: 20px; font-size: 18px"
+        >
+          <input
+            [(ngModel)]="type"
+            type="radio"
+            [value]="0"
+            name="selectLabPartner"
+            id="selectLabPartner1"
+          />
+          <label class="ml-2 mb-0" for="selectLabPartner1">Thyrocare</label>
+          <!-- <span class="ml-2" for='selectLabPartner1' > Thyrocare</span> -->
+        </div>
+        <div
+          class="h-100 py-2 px-4 mx-2 border border-info"
+          style="border-radius: 20px; font-size: 18px"
+        >
+          <input
+            [(ngModel)]="type"
+            type="radio"
+            [value]="1"
+            name="selectLabPartner"
+            id="selectLabPartner2"
+          />
+          <label class="ml-2 mb-0" for="selectLabPartner2"
+            >Prima Diagnostics</label
+          >
+
+          <!-- <span class="ml-2" for='selectLabPartner2' > Prima Diagnostics</span> -->
+        </div>
+        <div
+          class="h-100 py-2 px-4 mx-2 border border-info"
+          style="border-radius: 20px; font-size: 18px"
+        >
+          <input
+            [(ngModel)]="type"
+            type="radio"
+            [value]="2"
+            name="selectLabPartner"
+            id="selectLabPartner3"
+          />
+          <label class="ml-2 mb-0" for="selectLabPartner3">Healthians</label>
+
+          <!-- <span  for='selectLabPartner3' class="ml-2">Healthians</span>  -->
+        </div>
+      </div>
+    </div>
+    <div
+      *ngIf="type == 0"
+      class="p-4 border border-danger my-4"
+      style="border-radius: 20px"
+    >
+    <div class="d-flex" >
+      <div class="">
+        <img src="assets/{{ data.Thyrocare }}" alt="" srcset="" />
+      </div>
+      <div class="mx-4">
+        <p class="">
+          Accreditation: NABL, ISO, CAP, ISO 27001, NGSP (for HbA1c)
+        </p>
+        <p>
+          Thyrocare is India's first fully automated diagnostic laboratory with
+          a focus on providing quality care at affordable costs.
+        </p>
+
+        <ul class="px-4">
+          <li>Centralized laboratory processing 60,000 samples daily</li>
+
+          <li>
+            State of the art diagnostic infrastructure for accuracy & precision
+          </li>
+
+          <li>
+            ISO 9001:2008 and CAP (College of American Pathologists) certified
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-3" >
+      <h3 class="caroseltitle mx-5 mb-4">Tests Included (79)</h3>
+
+      <div class="testinclude">
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Complete-Blood-Profile.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr1"
+                toolclick="1"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Complete Blood Count(23)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Liver.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr2"
+                toolclick="2"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Liver Profile(11)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Body-Fat-Composition.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr3"
+                toolclick="3"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Lipid Profile(8)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Kidney.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr4"
+                toolclick="4"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Kidney Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Thyroid.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr5"
+                toolclick="5"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Thyroid Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Inflammation.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr6"
+                toolclick="6"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Inflammation Marker(1)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/UrineAnalysis.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr7"
+                toolclick="7"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Urine Analysis(17)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Gout.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr8"
+                toolclick="8"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Gout Panel(1)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Vitamins.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr9"
+                toolclick="9"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Vitamin Profile(2)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Electrolytes.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr10"
+                toolclick="10"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Electrolytes Profile(4)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Diabetes.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr11"
+                toolclick="11"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Diabetes Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Iron.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr12"
+                toolclick="12"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Iron Studies(3)</h4>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div
+      *ngIf="type == 1"
+      class="p-4 border border-danger my-4"
+      style="border-radius: 20px"
+    >
+    <div class="d-flex" >
+      <div><img src="assets/{{ data.prima }}" alt="" srcset="" /></div>
+      <div class="mx-4">
+        <p class="">Accreditation: NABL, NABH, ISO</p>
+        <p>
+          Prima Diagnostics is India’s largest provider of health test at-home
+          service, creating a new benchmark in quality.
+        </p>
+
+        <ul class="px-4">
+          <li>Trusted by over 600,000 households</li>
+
+          <li>300+ trained technicians</li>
+
+          <li>
+            46 touch-point technology for assured quality collection & testing
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div  class="mt-3" >
+      <h3 class="caroseltitle  mx-5 mb-4">Tests Included (79)</h3>
+
+      <div class="testinclude">
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Complete-Blood-Profile.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr1"
+                toolclick="1"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Complete Blood Count(23)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Liver.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr2"
+                toolclick="2"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Liver Profile(11)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Body-Fat-Composition.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr3"
+                toolclick="3"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Lipid Profile(8)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Kidney.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr4"
+                toolclick="4"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Kidney Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Thyroid.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr5"
+                toolclick="5"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Thyroid Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Inflammation.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr6"
+                toolclick="6"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Inflammation Marker(1)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/UrineAnalysis.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr7"
+                toolclick="7"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Urine Analysis(17)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Gout.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr8"
+                toolclick="8"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Gout Panel(1)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Vitamins.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr9"
+                toolclick="9"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Vitamin Profile(2)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Electrolytes.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr10"
+                toolclick="10"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Electrolytes Profile(4)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Diabetes.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr11"
+                toolclick="11"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Diabetes Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Iron.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr12"
+                toolclick="12"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Iron Studies(3)</h4>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div
+      *ngIf="type == 2"
+      class="p-4 border border-danger my-4"
+      style="border-radius: 20px"
+    >
+    <div class="d-flex" >
+      <div><img src="assets/{{ data.healthians }}" alt="" srcset="" /></div>
+      <div class="mx-4">
+        <p class="">Accreditation:</p>
+        <p>
+          Healthians is India’s largest provider of health test at-home service,
+          creating a new benchmark in quality.
+        </p>
+
+        <ul class="px-4">
+          <li>Trusted by over 600,000 households</li>
+
+          <li>300+ trained technicians</li>
+
+          <li>
+            46 touch-point technology for assured quality collection & testing
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+<div  class="mt-3" >
+      <h3 class="caroseltitle  mx-5 mb-4">Tests Included (79)</h3>
+
+      <div class="testinclude">
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Complete-Blood-Profile.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr1"
+                toolclick="1"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Complete Blood Count(23)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Liver.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr2"
+                toolclick="2"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Liver Profile(11)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Body-Fat-Composition.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr3"
+                toolclick="3"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Lipid Profile(8)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Kidney.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr4"
+                toolclick="4"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Kidney Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Thyroid.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr5"
+                toolclick="5"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Thyroid Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Inflammation.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr6"
+                toolclick="6"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Inflammation Marker(1)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/UrineAnalysis.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr7"
+                toolclick="7"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Urine Analysis(17)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Gout.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr8"
+                toolclick="8"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Gout Panel(1)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Vitamins.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr9"
+                toolclick="9"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Vitamin Profile(2)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Electrolytes.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr10"
+                toolclick="10"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Electrolytes Profile(4)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Diabetes.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr11"
+                toolclick="11"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Diabetes Profile(3)</h4>
+        </div>
+        <div class="single-item">
+          <img
+            class="testimage"
+            src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Iron.png"
+            alt="testimage"
+          />
+
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdownic"
+            data-toggle="dropdown"
+          >
+            <p class="iconp">
+              <img
+                class="iconimgg imgr12"
+                toolclick="12"
+                src="https://www.mfine.co/wp-content/themes/Divi/images/home/left-arrow.png"
+                alt="arrow"
+              />
+            </p>
+          </button>
+
+          <h4>Iron Studies(3)</h4>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="px-5 row flex-colunm" style="margin-bottom: 100px;" >
+    <h3>Comprehensive full body checkup for men</h3>
+    <h3>What is a comprehensive full body checkup for men?</h3>
+    <p>
+      A comprehensive full body checkup in Bengaluru is a detailed list of
+      tests, all available at once under one health package, which is taken to
+      examine the state of your health in all aspects. This will help identify
+      any existing medical conditions, and will also be able to diagnose if you
+      are potentially at risk for any disease. A full body men’s health check
+      package in Bengaluru with a general doctor in Bengaluru has tests that
+      give you detailed insights on your health, overall organ functioning, and
+      if there are any deficiencies that need to be treated. The package
+      comprises tests like a CBC test, cholesterol and diabetes screening,
+      cardiac tests, urine tests, vitamin D test, B12 test, and more. An annual
+      comprehensive full body checkup at home is suggested for all men over the
+      age of 18.
+    </p>
+    <h3>Why should you get a comprehensive full body checkup?</h3>
+    <p>
+      With so many physiological and psychological changes that occur throughout
+      an individual’s life, it’s easier to become more prone to health
+      conditions, especially if your family has a history of any medical
+      problems like diabetes or blood pressure. This is why we suggest a full
+      body checkup at home so that you can remain in control of your health. A
+      men’s annual health checkup in Bengaluru will show if there is a risk to
+      any health conditions. Early detection will always give you a chance to
+      effectively manage, prevent and treat conditions. While many people opt to
+      get an advanced full body health checkup, we recommend getting a full body
+      checkup for men at least once a year as this includes more tests that
+      provide in-depth insights on your health. An advanced full body test does
+      not consist of the complete set of tests for every aspect of your health
+      the way a men’s health check package by a general doctor in Bengaluru
+      does.
+    </p>
+    <h3>What tests does a comprehensive full body checkup include?</h3>
+    <p>
+      There are a total of 91 tests included in a men’s annual health checkup
+      package. mfine’s complete health checkup includes the following tests:
+    </p>
+    <ul>
+      <li>
+        <strong>24 complete blood count tests:</strong> A blood test can help
+        reveal your overall and general health, and can help identify infections
+        or disorders present in the body.
+      </li>
+      <li>
+        <strong>3 electrolyte tests:</strong> This test is used to evaluate if
+        your salt and mineral levels in the body are balanced or not.
+      </li>
+      <li>
+        <strong>5 diabetes tests:</strong> Monitor your blood glucose levels,
+        sugars, and determine if you’re at risk for diabetes with a diabetes
+        screening test. Based on the outcome of results, your doctor will refer
+        you to a diabetes doctor.
+      </li>
+      <li>
+        <strong>11 liver tests:</strong> These tests help determine if your
+        liver is in good health.
+      </li>
+      <li>
+        <strong>8 lipid tests:</strong> These tests help determine the
+        cholesterol levels in your blood. They also generate the amount of fats,
+        of various types, in your bloodstream. A lipid profile can help evaluate
+        the risk for stroke and cardiac diseases, among others.
+      </li>
+      <li>
+        <strong>3 thyroid tests:</strong> While thyroid disorders are more
+        prevalent in women, men can become affected with low thyroid levels as
+        well. A thyroid profile test will help determine if your thyroid gland
+        is in the pink of its health.
+      </li>
+      <li>
+        <strong>17 urine tests:</strong> The 17 urine tests included in this
+        package helps in executing a complete urine analysis. This helps in
+        checking for urinary tract infections. The reports also address signs of
+        hypertension, diabetes, and fatty liver disease.
+      </li>
+      <li>
+        <strong>2 vitamin tests:</strong> These are used to check if you have
+        vitamin deficiencies. These tests will check for a normal vitamin D
+        level and normal B12 levels.
+      </li>
+      <li>
+        <strong>1 hormone test:</strong> This test is used to profile your
+        testosterone levels.
+      </li>
+      <li>
+        <strong>2 pancreas tests:</strong> These tests are done to detect
+        pancreatitis by measuring the amount of amylase and lipase enzymes
+        circulating in your bloodstream.
+      </li>
+      <li>
+        <strong>1 cancer screening:</strong> This test helps examine risks of
+        developing prostate cancer in men in a master health checkup for men.
+      </li>
+      <li>
+        <strong>3 iron tests:</strong> These tests assess the amount of iron
+        that is circulating in the blood, as well as the total capacity of the
+        body to store iron and transport iron in the body through the blood.
+      </li>
+      <li>
+        <strong>6 cardiac tests:</strong> These tests are done to detect any
+        signs and symptoms of heart disease in men.
+      </li>
+      <li>
+        <strong>3 kidney tests:</strong> These tests are used to determine the
+        health and functioning of your kidney system.
+      </li>
+      <li>
+        <strong>1 inflammation marker:</strong> Used to detect levels of certain
+        factors and medical concerns in the body which are elevated during
+        infections and chronic inflammatory diseases like Rheumatoid Arthritis
+        or lupus, to even certain types of cancer.
+      </li>
+      <li>
+        <strong>1 gout test:</strong> The test helps in determining if you have
+        high levels of uric acid, which can be indicative of gout.
+      </li>
+    </ul>
+    <h3>How can we help?</h3>
+    <p>
+      With mfine, avail a comprehensive full body checkup package in Bengaluru,
+      and a specialist from Thyrocare or Prima Diagnostics or Healthians will
+      visit your home to pick up your samples. Within 48 hours, the reports will
+      be available on the app. Such a comprehensive full body checkup includes a
+      wide range of tests, the results of which need to be looked at by a
+      general physician to reach a correct and conclusive outcome. On the mfine
+      app, you can get in touch with the top general doctors in Bengaluru,
+      through instant chat and video consultation.
+    </p>
+    <h3>FAQs</h3>
+    <h3>Who should take these tests?</h3>
+    <p>
+      All men above the age of 18 should opt for a men’s health check annually.
+      In case you have a family history of diabetes, cholesterol, or heart
+      problems, you should opt for a men’s annual health checkup in Bengaluru.
+      However, if you are a man above the age of 30, it’s recommended you choose
+      this test twice a year.
+    </p>
+    <h4>Do I need to practice fasting before the blood test?</h4>
+    <p>
+      In order to arrive at accurate results, some tests from this comprehensive
+      list of health checks requires fasting before blood test and sample
+      collection. Thus, once you book a full body checkup at home, you will be
+      required to keep a gap of 10-12 hours between the last meal and the time
+      of your scheduled tests. Only water is permissible during this period.
+    </p>
+    <h3>When will I get the reports?</h3>
+    <p>
+      Once your samples have been collected, we require 48 hours to derive the
+      results, which will then be uploaded onto your profile on the mfine app
+      for easy access.
+    </p>
+    <h3>What happens once I get my results?</h3>
+    <p>
+      After your men’s health check is complete and the results have been
+      uploaded onto the app, a general doctor in Bengaluru will get in touch
+      with you. They will speak to you regarding the analysis of the reports,
+      and will offer guidance on the aspects of your health you need to focus
+      on. If the doctor notices any early symptoms of medical conditions
+      beginning to appear, they will refer you to a specialty doctor in
+      Bengaluru for the same.
+    </p>
+    <h3>Do I need a doctor’s prescription for the tests?</h3>
+    <p>
+      Since this health package is a comprehensive list of tests for the purpose
+      of preventive measures, you will not require a doctor’s prescription to
+      avail these tests. Simply book a men’s annual health checkup online and
+      schedule a date and time convenient to you for the sample collection.
+    </p>
+  </div>
+
+  <div
+    class="row bg-light px-5 justify-content-between align-content-center position-fixed w-100 border-top"
+    style="height: 80px; bottom: 0; z-index: 100"
+  >
+    <div class="d-flex h-100 align-items-center" >
+      <div *ngIf="type == 0">
+        <div >
+          <img
+            src="assets/{{ data.Thyrocare }}"
+            class="img-fluid"
+            style="height: 50px"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div *ngIf="type == 1" >
+        <div class="">
+          <img src="assets/{{ data.prima }}" class="img-fluid "  style="height: 50px" />
+        </div>
+      </div>
+
+      <div *ngIf="type == 2" >
+        <div>
+          <img src="assets/{{ data.healthians }}" class="img-fluid "  style="height: 50px" />
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center mx-5">
+        <h5 class="m-0">
+          {{ data.name }}
+        </h5>
+      </div>
+    </div>
+
+    <div class="row align-items-center mx-1 mt-2" >
+      <div style="text-decoration-line: line-through" >
+        <i class="fa fa-inr" aria-hidden="true"></i>{{ data.marketPrice }}
+      </div>
+      <div class="text-info px-2 mx-md-2 mx-3">
+        <i class="fa fa-inr mr-1" aria-hidden="true"></i>{{ sellingPrice() }}
+      </div>
+      <div>
+        <button class="btn btn-success px-4 py-2" style="border-radius: 15px" (click) = "navigate( )" >
+          Book Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 		
+<div id="slider4" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+              <div class="carousel-item   active ">
+    <div class="row">
+                <div class="col-md-3">
+      <div class="slide4_item">
+        <div class="hovereffect"><img title="To help evaluate lifestyle changes and health risks" alt="To help evaluate lifestyle changes and health risks" src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=SalesPackage/Health Risk-2019-09-25.png" class="img-fluid"></div>
+        <h4>To help evaluate lifestyle changes and health risks</h4>
+      </div>
+      </div>
+                   <div class="col-md-3">
+      <div class="slide4_item">
+        <div class="hovereffect"><img title="The tests are recommended atleast once a year" alt="The tests are recommended atleast once a year" src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=SalesPackage/Once-a-year-2019-09-25.png" class="img-fluid"></div>
+        <h4>The tests are recommended atleast once a year</h4>
+      </div>
+      </div>
+                   <div class="col-md-3">
+      <div class="slide4_item">
+        <div class="hovereffect"><img title="To have better insight into your immunity" alt="To have better insight into your immunity" src="https://assets.mfine.co/api/contentservice/attachments/downloadFromDb?fileName=ProgramImages/Immunity_06042020.jpg" class="img-fluid"></div>
+        <h4>To have better insight into your immunity</h4>
+      </div>
+      </div>
+        
+    </div>
+    </div>
+      
+             
+  </div> 
+  
+  <a
+  class="carousel-control-prev border rounded-circle bg-danger"
+  href="#slider4"
+  role="button"
+  data-slide="prev"
+  style="height: 40px; width: 40px; top: 30%"
+>
+  <span
+    class="carousel-control-prev-icon"
+    aria-hidden="true"
+  ></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a
+  class="carousel-control-next border rounded-circle bg-danger"
+  href="#slider4"
+  role="button"
+  data-slide="next"
+  style="height: 40px; width: 40px; top: 30%"
+>
+  <span
+    class="carousel-control-next-icon"
+    aria-hidden="true"
+  ></span>
+  <span class="sr-only">Next</span>
+</a>
+
+  </div>  
+
+ -->
+
+<!--  <div
+  id="carouselExampleControls"
+  class="carousel slide col-12"
+  
+  data-interval="false"
+>
+
+
+  <div class="carousel-inner d-flex" style="height: 100px">
+    <div class="carousel-item active d-flex  justify-content-center">
+      <div class="col-3">
+        <img
+          class="d-block  h-100 img-fluid w-100"
+          src="assets/{{ data.userLogo }}"
+          alt="First slide"
+        />
+        <p>If you are above 18 years</p>
+      </div>
+      <div class="col-3">
+        <img
+          class="d-block  h-100 img-fluid w-100"
+          src="assets/{{ data.healthStyle }}"
+          alt="Second slide"
+        /> -->
+
+<!-- <div class="carousel-caption d-none d-md-block">
+          <span
+            >To help evaluate lifestyle changes and health risks</span
+          >
+        </div> -->
+<!-- </div>
+      <div class="col-3">
+        <img
+          class="d-block  h-100 img-fluid w-100"
+          src="assets/{{ data.bookingWindow }}"
+          alt="Third slide"
+        /> -->
+<!-- <div class="carousel-caption d-none d-md-block">
+          <span>Recommended once a year</span>
+        </div> -->
+<!-- </div>
+    </div>
+
+    <div class="carousel-item ">
+      <div class="col-3">
+      <img
+        class="d-block  h-100 img-fluid w-100"
+        src="assets/{{ data.immunity }}"
+        alt="Fourth slide"
+      />
+    </div> -->
+<!-- <div class="carousel-caption d-none d-md-block">
+        <span>To have better insight into your immunitys</span>
+      </div> -->
+<!-- </div>
+  </div>
+  <a
+    class="carousel-control-prev border rounded-circle bg-danger"
+    href="#carouselExampleControls"
+    role="button"
+    data-slide="prev"
+    style="height: 40px; width: 40px; top: 30%"
+  >
+    <span
+      class="carousel-control-prev-icon"
+      aria-hidden="true"
+    ></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a
+    class="carousel-control-next border rounded-circle bg-danger"
+    href="#carouselExampleControls"
+    role="button"
+    data-slide="next"
+    style="height: 40px; width: 40px; top: 30%"
+  >
+    <span
+      class="carousel-control-next-icon"
+      aria-hidden="true"
+    ></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Complete Blood Count</h5>										
+  <p>Blood composition helps understand if your body is fighting any infections/diseases. The values can be directly associated with your symptoms.</p>										
+  <ul>
+                          <li>Hemoglobin (Hb)</li>
+                          <li>Plateletcrit</li>
+                          <li>Mean Platelet Volume</li>
+                          <li>Leucocytes</li>
+                          <li>Immature Granulocyte</li>
+                          <li>Absolute - Lymphocyte Count</li>
+                          <li>Nucleated RBC %</li>
+                          <li>Mean Corpuscular Hemoglobin</li>
+                          <li>Lymphocyte %</li>
+                          <li>Monocytes</li>
+                          <li>Neutrophils</li>
+                          <li>Eosinophile</li>
+                          <li>Total RBC</li>
+                          <li>RDW SD</li>
+                          <li>RDW CV</li>
+                          <li>Packed Cell Volume (PCV) or Hematocrit (Hct)</li>
+                          <li>Platelet count</li>
+                          <li>Mean Corpuscular Hemoglobin Concentration</li>
+                          <li>Basophils</li>
+                          <li>PLATELET COUNT (Automated / Verified in smear)</li>
+                          <li>Absolute - Eosinophil Count</li>
+                          <li>Absolute - Monocyte Count</li>
+                          <li>Absolute - Neutrophil Count</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+
+  <h5>Liver Profile</h5>										
+  <p>These parameters will help you understand the liver activity and its health.</p>										
+  <ul>
+                          <li>Gamma-glutamyltransferase (GGT)</li>
+                          <li>ALKALINE PHOSPHATASE</li>
+                          <li>Bilirubin Direct</li>
+                          <li>Bilirubin Total</li>
+                          <li>Bilirubin Indirect</li>
+                          <li>Protein Total</li>
+                          <li>SERUM ALBUMIN (BCG)</li>
+                                   <li>Serum Globulin</li>
+                          <li>Albumin/Globulin Ratio  Serum</li>
+                          <li>Serum Glutamic-Oxaloacetic Transaminase</li>
+                          <li>Serum Glutamic Pyruvic Transaminase</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Urine Analysis</h5>										
+  <p></p>										
+  <ul>
+                          <li>Specific Gravity</li>
+                          <li>Clarity/Turbidity</li>
+                          <li>Urine Colour</li>
+                          <li>Urine pH</li>
+                          <li>Glucose</li>
+                          <li>Nitrates</li>
+                          <li>Leukocyte esterase</li>
+                          <li>Albumin</li>
+                          <li>Urobilinogen</li>
+                          <li>Protein Urine</li>
+                          <li>Red blood cells (RBCs)</li>
+                          <li>Crystals</li>
+                          <li>Blood</li>
+                          <li>White Blood Cells</li>
+                          <li>Squamous epitheleal cells</li>
+                          <li>Casts</li>
+                          <li>Bacteria</li>
+                        </ul>										
+</div> -->
+<!-- 
+<div class="dropdown-menu">
+         
+  <h5>Kidney Profile</h5>										
+  <p>This test helps determine the health of your kidney.</p>										
+  <ul>
+                          <li>Creatinine</li>
+                          <li>BLOOD UREA NITROGEN</li>
+                          <li>BUN/Creatinine Ratio</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Electrolytes Profile</h5>										
+  <p></p>										
+  <ul>
+                          <li>Sodium</li>
+                          <li>Potassium</li>
+                          <li>Calcium</li>
+                          <li>Chloride</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Diabetes Profile</h5>										
+  <p>This help identify risk factors for diabetes and monitor blood glucose levels.</p>										
+  <ul>
+                          <li>HbA1c</li>
+                          <li>Average Blood Sugar</li>
+                          <li>FASTING BLOOD GLUCOSE</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Iron Studies</h5>										
+  <p></p>										
+  <ul>
+                          <li>Iron Serum</li>
+                          <li>TIBC</li>
+                          <li>% Transferrin Saturation</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Vitamin Profile</h5>										
+  <p></p>										
+  <ul>
+                          <li>Vitamin D Total</li>
+                          <li>Vitamin B-12</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Gout Panel</h5>										
+  <p></p>										
+  <ul>
+                          <li>Uric Acid</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Inflammation Marker</h5>										
+  <p></p>										
+  <ul>
+                          <li>ESR (Automated)</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Thyroid Profile</h5>										
+  <p></p>										
+  <ul>
+                          <li>TriIodothyronine (T3) - Total</li>
+                          <li>Thyroxine (T4) - Total</li>
+                          <li>Thyroid Stimulating Hormone (TSH)</li>
+                        </ul>										
+</div> -->
+
+<!-- <div class="dropdown-menu">
+         
+  <h5>Lipid Profile</h5>										
+  <p>Lipid profile is a set of tests used to measure the amount of cholesterol and other types of fats present in your blood.</p>										
+  <ul>
+                          <li>Cholesterol - Total</li>
+                          <li>Cholesterol - HDL</li>
+                          <li>TRIGLYCERIDES</li>
+                          <li>Cholesterol - LDL</li>
+                          <li>VLDL CHOLESTEROL (Calculated)</li>
+                          <li>LDL/HDL RATIO</li>
+                          <li>Non-HDL Cholestrol</li>
+                          <li>TC/HDL Cholestrol ratio</li>
+                        </ul>										
+</div> -->
